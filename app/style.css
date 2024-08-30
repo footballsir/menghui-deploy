@@ -1,0 +1,366 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #F1F4F8;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+.background-1 {
+    background-color: #F1F4F8;
+}
+
+/* accent color */
+.background-a {
+    background-color: #2558A4;
+}
+
+.color-a {
+    color: #2558A4;
+}
+
+.color-1 {
+    color: #1D1B20;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+
+.h1 {
+    color: #2558A4;
+    /* font-family: "Bricolage Grotesque"; */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    line-height: normal;
+}
+
+.h-xl {
+    color: #2558A4;
+    /* font-family: "Bricolage Grotesque"; */
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.p1 {
+    color: #1D1B20;
+    /* font-family: Onest; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1280px;
+}
+
+.container-project {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1440px;
+}
+
+.container-page {
+    background-color: white;
+    border-radius: 32px;
+    width: 100%;
+    margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.container-page-flex {
+    width: 100%;
+    padding: 0px 80px;
+}
+
+.container-page-full {
+    width: 100%;
+}
+
+
+.header-title {
+    color: #2558A4;
+    font-family: Onest;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.project-card {
+    background-color: white;
+    height: 524px;
+    width: 100%;
+    border-radius: 24px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    scale: 1.05;
+    box-shadow: var(--shadow-baseX, 0px) var(--shadow-64BaseY, 0px) var(--shadow-64BaseBlur, 8px) 0px var(--color-neutral-shadowAmbient, rgba(0, 0, 0, 0.12)), var(--shadow-diffuseX, 0px) var(--shadow-64DiffuseY, 32px) var(--shadow-64DiffuseBlur, 64px) 0px var(--color-neutral-shadowKey, rgba(0, 0, 0, 0.14));
+}
+
+.button {
+    display: inline-flex;
+    height: 44px;
+    padding: 4px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #D5FDFE;
+    color: #1D1B20;
+    text-align: center;
+    font-family: Onest;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.button:hover {
+    background: #ADFFFF;
+}
+
+.tag {
+    display: flex;
+    padding: 0 16px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Onest;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 99px;
+    background: #4888D7;
+}
+
+.card-title1 {
+    font-family: "Bricolage Grotesque";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.card-title2 {
+    font-family: "Bricolage Grotesque";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.card-blue {
+    background-color: #4888D7;
+}
+
+.card-yellow {
+    background-color: #E8D38C;
+}
+
+.card-green {
+    background-color: #58AF5F;
+}
+
+.card-red {
+    background-color: #E36657;
+}
+
+.card-purple {
+    background-color: #BE6CFF;
+}
+
+
+.bio {
+    background-color: #E1EAF6;
+    padding: 48px;
+    display: flex;
+    justify-content: space-around;
+    gap: 48px;
+    border-radius: 24px;
+}
+
+.footer-link {
+    display: flex;
+    height: 44px;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #FFF;
+    color: #1D1B20;
+    font-family: Onest;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer-link:hover {
+    border: 1px solid #2d2d2d;
+    /* background-color: rgba(0, 0, 0, 0.04); */
+}
+
+a.link {
+    position: relative;
+    color: #2558A4;
+    font-weight: 600;
+    font-variation-settings: 'wght' 600;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: #2558A4;
+    text-decoration-thickness: 1px;
+    text-decoration-style: dotted;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+
+
+
+
+
+/* Animation */
+
+.animation-1 {
+    animation: MoveUpDown1 7.2s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown1 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        scale: 1;
+    }
+
+    50% {
+        transform: translateY(-12px);
+        scale: 1.1;
+    }
+}
+
+.animation-2 {
+    animation: MoveUpDown2 5.6s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown2 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        scale: 1;
+    }
+
+    50% {
+        transform: translateY(-12px);
+        scale: 1.1;
+    }
+}
+
+.animation-3 {
+    animation: MoveUpDown1 6s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown1 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        scale: 1;
+    }
+
+    50% {
+        transform: translateY(-10px);
+        scale: 1.1;
+    }
+}
+
+.animation-4 {
+    animation: MoveUpDown1 6.4s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown1 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        scale: 1;
+    }
+
+    50% {
+        transform: translateY(-10px);
+        scale: 1.1;
+    }
+}
+
+.animation-5 {
+    animation: MoveUpDown1 5.2s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown1 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        scale: 1;
+    }
+
+    50% {
+        transform: translateY(-8px);
+        scale: 1.1;
+    }
+}
+
+.animation-6 {
+    animation: MoveUpDown1 8s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown1 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        scale: 1;
+    }
+
+    50% {
+        transform: translateY(-8px);
+        scale: 1.1;
+    }
+}
